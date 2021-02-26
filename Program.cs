@@ -13,6 +13,15 @@ namespace Methods_7
             Employee employee = new Employee() { firstName = "Sample", lastName = "Student" };
             employee.SayName();
             Console.ReadLine();
+
+            //Begin Assignment pg. 247
+
+            employee.Quit();
+            Console.ReadLine();
+
+            IQuittable quit = new Employee() { firstName = "Martha", lastName = "Marsh" };
+            quit.Quit();
+            Console.ReadLine();
         }
     }
 }
