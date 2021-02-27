@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Methods_7
 {
-    class Employee : Person, IQuittable
+    class Employee<T> : Person, IQuittable
     {
+        public List<T> Things { get; set; }
+        
         public int ID;
         public override void SayName()
         {
@@ -17,30 +19,32 @@ namespace Methods_7
         {
             Console.WriteLine("I ," + firstName + " " + lastName + ", quit.");
         }
-        public static bool operator ==(Employee employee1, Employee employee2)   //==
-        {
-            if (employee1.ID == employee2.ID)
-            {
 
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
 
-        public static bool operator !=(Employee x, Employee y)  //!=
-        {
-            if (x.ID == y.ID)
-            {
+        //public static bool operator ==(Employee employee1, Employee employee2)   //==
+        //{
+        //    if (employee1.ID == employee2.ID)
+        //    {
 
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
+
+        //public static bool operator !=(Employee x, Employee y)  //!=
+        //{
+        //    if (x.ID == y.ID)
+        //    {
+
+        //        return false;
+        //    }
+        //    else
+        //    {
+        //        return true;
+        //    }
+        //}
     }
 }
