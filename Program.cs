@@ -10,18 +10,23 @@ namespace Methods_7
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee() { firstName = "Sample", lastName = "Student" };
-            employee.SayName();
-            Console.ReadLine();
+            Employee employee1 = new Employee() { firstName = "Sample", lastName = "Student", ID = 1 };
+            Employee employee2 = new Employee() { firstName = "Sample", lastName = "Student", ID = 2 };
+            //employee1.SayName();
+            //Console.ReadLine();
 
-            //Begin Assignment pg. 247
+            ////Begin Assignment pg. 247
 
-            employee.Quit();
-            Console.ReadLine();
+            //employee.Quit();
+            //Console.ReadLine();
 
-            IQuittable quit = new Employee() { firstName = "Martha", lastName = "Marsh" };
-            quit.Quit();
+            //IQuittable quit = new Employee() { firstName = "Martha", lastName = "Marsh" };
+            //quit.Quit();
+            //Console.ReadLine();
+
+            Console.WriteLine(Convert.ToString(employee1==employee2));        // Assignment pg. 252
             Console.ReadLine();
+            
         }
     }
 }
